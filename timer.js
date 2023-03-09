@@ -32,7 +32,7 @@ class Timer {
         this.onComplete();
       }
     } else {
-      this.timeRemaining = this.timeRemaining - .02;
+      this.timeRemaining = this.timeRemaining - 0.02;
       if (this.onTick) {
         this.onTick(this.timeRemaining);
       }
@@ -46,4 +46,10 @@ class Timer {
   set timeRemaining(time) {
     this.durationInput.value = time.toFixed(2);
   }
+}
+
+
+function resetTimer() {
+  timer = 0;
+  timerDisplay.textContent = formatTime(timer);
 }

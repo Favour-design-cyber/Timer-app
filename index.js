@@ -1,6 +1,9 @@
 const durationInput = document.querySelector("#duration");
 const startButton = document.querySelector("#start");
 const pauseButton = document.querySelector("#pause");
+const resetBtn = document.getElementById("#reset");
+
+resetBtn.addEventListener("click");
 const circle = document.querySelector('circle');
 
 const perimeter = circle.getAttribute('r') * 2 * Math.PI;
@@ -19,4 +22,5 @@ let duration;
   onComplete() {
     console.log("Timer is completed");
   },
+
 });
