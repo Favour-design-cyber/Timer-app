@@ -23,7 +23,7 @@ class Timer {
 
   pause = () => {
     clearInterval(this.interval);
-  };
+  }; 
 
   tick = () => {
     if (this.timeRemaining <= 0) {
@@ -49,7 +49,3 @@ class Timer {
 }
 
 
-function resetTimer() {
-  timer = 0;
-  timerDisplay.textContent = formatTime(timer);
-}
